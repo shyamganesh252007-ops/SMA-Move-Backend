@@ -1,0 +1,43 @@
+# Environment configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Database dumps, sqlite, and database files
+*.sql
+*.sqlite
+*.db
+# Preserve versioned schema migration files
+!database/migrations/*.sql
+
+# Logs and runtime diagnostics
+logs/
+*.log
+
+# Cryptographic keys, certificates, and secrets
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Dependency directories
+/vendor/
+/node_modules/
+
+# Operating System files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE and Editor directories
+/.vscode/
+/.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Testing and Coverage artifacts
+tests/coverage/
+.phpunit.result.cache
+
+# Temporary server backup files
+.htaccess.backup
